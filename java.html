@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Operation</title>
+</head>
+
+
+    <!-- For styling -->
+
+   
+    <style> 
+
+        body { 
+
+            border: 0.2px solid black; 
+
+           position: relative; 
+           background-color: rgb(249, 210, 162);
+           
+
+        } 
+
+          
+
+        input[type="button"] { 
+
+            width: 10%; 
+
+            padding: 20px 40px; 
+
+            background-color: rgb(52, 116, 235); 
+
+            color: white; 
+
+            font-size: 15px; 
+
+            font-weight: bold; 
+
+            border: none; 
+
+            border-radius: 2px; 
+
+        } 
+
+          
+
+        input[type="text"] { 
+
+            padding: 20px 30px; 
+
+            font-size: 24px; 
+
+            font-weight: bold; 
+
+            border: none; 
+
+            border-radius: 2px; 
+
+            border: 2px solid rgb(132, 197, 53); 
+
+        } 
+
+    </style> 
+<body align="center">
+    
+    <h1>Arithmetic opertion</h1>
+  <script type="text/javascript">
+    function multiply(){
+      a=Number(document.my_cal.first.value);
+      b=Number(document.my_cal.second.value);
+      c=a*b;
+      document.my_cal.total.value=c;
+    }
+
+    function addition(){
+      a=Number(document.my_cal.first.value);
+      b=Number(document.my_cal.second.value);
+      c=a+b;
+      document.my_cal.total.value=c;
+    }
+
+
+    function subtraction(){
+      a=Number(document.my_cal.first.value);
+      b=Number(document.my_cal.second.value);
+      c=a-b;
+      document.my_cal.total.value=c;
+    }
+
+
+    function division(){
+      a=Number(document.my_cal.first.value);
+      b=Number(document.my_cal.second.value);
+      c=a/b;
+      document.my_cal.total.value=c;
+    }
+
+    function modulus(){
+      a=Number(document.my_cal.first.value);
+      b=Number(document.my_cal.second.value);
+   c=null;
+a=null;
+b=null;
+
+     
+      document.my_cal.first.value=c;
+      document.my_cal.second.value=c;
+      document.my_cal.total.value=c;
+
+    }
+  </script>
+
+  <!-- Opening a HTML Form. -->
+  <form name="my_cal">
+
+    <!-- Here user will enter 1st number. -->
+    <h3>Enter First No   : <input type="text" name="first"></h3>
+    
+    <br>
+
+    <!-- Here user will enter 2nd number. -->
+    <h3 >Enter Second No : <input type="text" name="second"></h3> 
+      <!-- Here result will be displayed. --><br>
+      <h3>My Final Result      : <input type="text" name="total"></h3>
+
+    <br>
+
+    <input type="button" value="ADD" onclick="javascript:addition();">
+    <input type="button" value="SUB" onclick="javascript:subtraction();">
+    <input type="button" value="MUL" onclick="javascript:multiply();">
+    <input type="button" value="DIV" onclick="javascript:division();">
+    <input type="button" value="Reset" onclick="javascript:modulus();">
+   
+    <br>
+
+  
+</form>
+  </body>
+  </html>
